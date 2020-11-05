@@ -1,38 +1,88 @@
-.App {
+/*
+=============== 
+Header
+===============
+*/
+
+header {
+  max-width: 1059px;
+  margin: 3% auto 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.scores {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+}
+
+.scores {
+  display: flex;
+}
+
+/*
+=============== 
+Main Icon Grid
+===============
+*/
+
+.basic-grid {
+  display: grid;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem;
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
+}
+
+.card {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.icon {
+  width: 150px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.icon:hover {
+  border: 5px solid #752727;
+}
+
+@media screen and (max-width: 975px) {
+  .icon {
+    width: 120px;
   }
-  to {
-    transform: rotate(360deg);
+  .basic-grid {
+    gap: 1.5rem;
+    grid-template-columns: repeat(5, minmax(120px, 1fr));
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .icon {
+    width: 100px;
+  }
+  .basic-grid {
+    gap: 1rem;
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .icon {
+    width: 80px;
+  }
+  .basic-grid {
+    grid-template-columns: repeat(5, minmax(80px, 1fr));
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .basic-grid {
+    grid-template-columns: repeat(3, minmax(80px, 1fr));
+  }
+  .basic-grid {
+    padding: 1rem;
   }
 }

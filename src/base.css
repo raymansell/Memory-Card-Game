@@ -1,0 +1,58 @@
+/*
+=============== 
+Global Styles
+===============
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #363a55;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  max-width: 100vw;
+}
+
+h1 {
+  font-size: 1.1rem;
+}
+h3 {
+  font-size: 0.8rem;
+}
+
+p {
+  font-size: 0.75rem;
+}
+
+@media screen and (min-width: 520px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+}
